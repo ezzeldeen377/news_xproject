@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:news_xproject/core/constants/app_strings.dart';
 import 'package:news_xproject/core/theme/app_color.dart';
 import 'package:news_xproject/core/theme/app_text_styles.dart';
 import 'package:news_xproject/features/search/presentation/cubit/search_cubit.dart';
@@ -33,7 +34,7 @@ class SearchVideosSection extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Recent Searches',
+                   AppStrings.instance.recentSearches,
                     style: AppTextStyles.font26TelegrafBlackRegular,
                   ),
                   GestureDetector(
